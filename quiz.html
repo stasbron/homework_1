@@ -1,159 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <title>QUIZ</title>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="tables.html">TABLES</a>
-                </li>
-
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <hr>
-        <h1>Quiz</h1>
-        <form method="POST" action="https://formspree.io/ssbron2@gmail.com">
-            <fieldset>
-                <label>Name:
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon.ico">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <title>QUIZ</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="tables.html">TABLES</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <hr>
+            <h1>Quiz</h1>
+            <form method="POST" action="https://formspree.io/ssbron2@gmail.com">
+                <fieldset>
+                    <label>
+                        Name:
                     <input type="text" name="person-name" required>
-                </label>
-                <br>
-                <label>E-mail:
-                    <input type="email" name="email" required>
-                </label>
-            </fieldset>
-            <br>
-            <fieldset>
-                Your gender:
-                <br>
-                <label>
-                    <input type="radio" name="gender" value="male" checked> Male
+                    </label>
                     <br>
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="female"> Female
-                </label>
-            </fieldset>
-            <br>
-            <fieldset>
-                <label> Mobile phone
+                    <label>
+                        E-mail:
+                    <input type="email" name="email" required>
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    Your gender:
+                <br>
+                    <label>
+                        <input type="radio" name="gender" value="male" checked>
+                        Male
+                    <br>
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">Female
+                
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <label>
+                        Mobile phone
                     <input type="text" name="person-phone" pattern="[+]{1}[0-9]{12}" placeholder="+380123456789">
-                </label>
-            </fieldset>
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    Civil status
             <br>
-            <fieldset>
-            Civil status
+                    <label>
+                        <input type="radio" name="Civil status" value=" married">Married
+            
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="Civil status" value="single">
+                        Single
+                <br>
+                    </label>
+                    <label>
+                        <input type="radio" name="Civil status" value="divorced">
+                        Divorced
+                <br>
+                    </label>
+                    <label>
+                        <input type="radio" name="Civil status" value="widowed">
+                        Widowed
+                <br>
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h2>Life position</h2>
+                    The main thing in life is:
+                
+                    <select>
+                        <option value="">None</option>
+                        <option value="family">Family and Children</option>
+                        <option value="career">Career and money</option>
+                        <option value="resty">Entertainment and recreation</option>
+                        <option value="self">Self-development</option>
+                    </select>
+                    <br>
+                    Attitude to smoking:
+                
+                    <select>
+                        <option value="-+">Neutral</option>
+                        <option value="-">Negative</option>
+                        <option value="+">Positive</option>
+                    </select>
+                    <br>
+                    Attitude to alcohol:
+                
+                    <select>
+                        <option value="-+">Neutral</option>
+                        <option value="-">Negative</option>
+                        <option value="+">Positive</option>
+                    </select>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h2>Music</h2>
+                    You like
+                <br>
+                    <label>
+                        <input type="checkbox" name="music" value="rock">Rock
+                
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="music" value="pop">Pop
+                
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="music" value="jazz">Jazz
+                
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="music" value="classical">Classical
+                
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="music" value="hip-hop">Hip-Hop
+                
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="music" value="alternative">Alternative
+                
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="music" value="folk">Folk
+                
+                    </label>
+                </fieldset>
+                <br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+                <br>
+            </form>
             <br>
-            <label>
-                <input type="radio" name="Civil status" value=" married">Married
-            </label>
-            <br>
-            <label>
-                <input type="radio" name="Civil status" value="single">Single
-                <br>
-            </label>
-            <label>
-                <input type="radio" name="Civil status" value="divorced">Divorced
-                <br>
-            </label>
-            <label>
-                <input type="radio" name="Civil status" value="widowed">Widowed
-                <br>
-            </label>
-        </fieldset>
-        <br>
-            <fieldset>
-                <h2>Life position</h2>
-                The main thing in life is:
-                <select>
-                    <option value="">None</option>
-                    <option value="family">Family and Children</option>
-                    <option value="career">Career and money</option>
-                    <option value="resty">Entertainment and recreation</option>
-                    <option value="self">Self-development</option>
-                </select>
-                <br> Attitude to smoking:
-                <select>
-                    <option value="-+">Neutral</option>
-                    <option value="-">Negative</option>
-                    <option value="+">Positive</option>
-                </select>
-                <br> Attitude to alcohol:
-                <select>
-                    <option value="-+">Neutral</option>
-                    <option value="-">Negative</option>
-                    <option value="+">Positive</option>
-                </select>
-            </fieldset>
-<br>
-            <fieldset>
-                <h2>Music</h2>
-                You like
-                <br>
-                <label>
-                    <input type="checkbox" name="music" value="rock"> Rock
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="music" value="pop"> Pop
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="music" value="jazz"> Jazz
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="music" value="classical"> Classical
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="music" value="hip-hop"> Hip-Hop
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="music" value="alternative"> Alternative
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="music" value="folk"> Folk
-                </label>
-            </fieldset>
-            <br>
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
-            <br>
-
-        </form>
-        <br>
-        <hr>
-
-
-
-    </main>
-    <footer>
-        <p>© 2018 </p>
-    </footer>
-
-</body>
-
+            <hr>
+        </main>
+        <footer>
+            <p>© 2018 </p>
+        </footer>
+    </body>
 </html>
